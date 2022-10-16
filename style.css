@@ -1,0 +1,107 @@
+body{
+    min-height:120vh;
+    color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Big Shoulders Display';
+    font-size: 15px;
+}
+img{
+    width: 3rem;
+}
+h1,img,button{
+    align-self: start;
+}
+p{  
+    font-family: 'Lexend Deca';
+    color:hsla(0, 0%, 100%, 0.75);
+}
+button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Lexend Deca';
+    font-size: 12px;
+    font-weight:550;
+}
+button:focus-visible {
+    outline: none;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
+    height: 280px;
+    padding: 1.5rem;
+}
+
+
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+#sedans-btn{color: hsl(31, 77%, 52%);}
+#suvs-btn{color: hsl(184, 100%, 22%);}
+#luxury-btn{color: hsl(179, 100%, 13%);}
+
+@media(min-width: 600px){
+
+    body{
+        min-height: 100vh;
+        flex-direction: row;
+    }
+    .card{
+        max-width: 220px;
+        height: 380px;
+    }
+    .card>button{
+        width: 120px;
+        height: 40px;
+        margin-top: 80px;
+    }
+
+    button:hover{
+        cursor:pointer;
+        background-color: transparent;
+        border: solid 2px white;
+        
+    }
+    #sedans-btn:hover,#suvs-btn:hover,#luxury-btn:hover{
+        color: white;
+    }
+    #sedans{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius:5px;
+        border-top-right-radius:0;
+        border-bottom-left-radius:5px;
+
+    }
+    #luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:5px;
+        border-top-right-radius:5px;
+    }
+    
+    
+    
+    
+}
